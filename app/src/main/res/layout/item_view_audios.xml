@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_FFFFFF"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_125dp"
+        android:padding="@dimen/dimen_16dp">
+
+        <ImageView
+            android:id="@+id/ivMediaImage"
+            android:layout_width="@dimen/dimen_80dp"
+            android:layout_height="@dimen/dimen_80dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_4dp"
+            android:background="@drawable/ic_youtube"
+            android:contentDescription="@string/text_superhero_image"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dimen_12dp"
+            android:layout_toEndOf="@id/ivMediaImage"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvMusicTitle"
+                style="@style/TextView"
+                android:layout_marginTop="@dimen/dimen_2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/teal_700"
+                android:textSize="@dimen/font_14sp" />
+
+            <TextView
+                android:id="@+id/tvMusicArtist"
+                style="@style/TextView"
+                android:layout_marginTop="@dimen/dimen_2dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/color_000000"
+                android:textSize="@dimen/font_12sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View style="@style/horizontal_line" />
+</LinearLayout>
